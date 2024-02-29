@@ -1,0 +1,195 @@
+.homepage{
+    background-color: white;
+}
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.concern-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #141a20;
+    width: 30%;
+    height: 40px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 0;
+}
+
+.raise-concern {
+    /* background-image: linear-gradient(to top, gray, white); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+    border: 1px solid rgba(50, 50, 93, 0.25);
+    /* border-radius: 9px; */
+    background-color: lightgray;
+    margin-top: 2%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.concern-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 1%;
+    text-decoration: underline;
+}
+
+.para {
+    text-align: center;
+    margin-top: 1%;
+    z-index: 0;
+    color: rgb(63, 63, 63);
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.list {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sub-heading {
+    height: 16rem;
+    width: 20rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(50, 50, 93, 0.25);
+    border-radius: 9px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 2%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;    padding: 1%;
+    margin: 1%;
+
+}
+
+.sub-heading h3{
+    font-size: 15px;
+    font-weight: 800;
+    color: black;
+}
+
+.sub-para {
+    /* width: 19rem; */
+    color: rgb(33, 33, 33);
+    font-weight: 100;
+    text-align: center;
+}
+
+.sub-heading:hover {
+    background-image: url(../../../assets/images/background/pexels-roman-odintsov-4871011.jpg);
+    background-repeat: no-repeat;
+    color: white;
+    transition: all .5s ease-in-out;
+}
+
+.sub-heading:hover h3{
+    color: white;
+}
+
+.sub-heading:hover .sub-para {
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    transition: all .5s ease-in-out;
+}
+
+.achivement {
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    width: 100%;
+    background-image: url(../../../assets/images/background/pexels-roman-odintsov-4871011.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2%;
+}
+
+.achivement-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.achivement-container{
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.donar,
+.members,
+.ngo-found {
+    flex-basis: 30%;
+    margin: 10px;
+}
+
+h3 {
+    font-size: 24px;
+
+    color: white;}
+
+h5 {
+    font-size: 18px;
+    
+    color: white;
+}
+
+.line{
+    width: 5rem;
+    transform: rotate(90deg);
+    background-color: rgb(255, 255, 255);
+}
+
+span {
+    display: block;
+    font-size: 28px;
+    color: #ffffff;
+    margin-top: 5px;
+    font-weight: bold;
+    animation: increaseNumber 2s infinite alternate;
+}
+
+@keyframes increaseNumber {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}

@@ -1,0 +1,142 @@
+<div class="admin-dashboard">
+    <div class="container">
+        <div class="admin-dashboard-container">
+            <!-- User Section -->
+            <div class="list-container">
+                <h5>User</h5>
+                <ul>
+                    <li>
+                        <span class="material-symbols-outlined">account_box</span>
+                        <a (click)="toggleUser()">Check User</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">person_add</span>
+                        <a href="/register">Add Person</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">upgrade</span>
+                        <a>Update User</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">person_remove</span>
+                        <a>Delete User</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- News Section -->
+            <div class="list-container">
+                <h5>News</h5>
+                <ul>
+                    <li>
+                        <span class="material-symbols-outlined">newsmode</span>
+                        <a href="/news">Post News</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">newsmode</span>
+                        <a href="/news">Update News</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">newsmode</span>
+                        <a href="/news">Delete News</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Picture Section -->
+            <div class="list-container">
+                <h5>Picture</h5>
+                <ul>
+                    <li>
+                        <span class="material-symbols-outlined">newsmode</span>
+                        <a href="/news">Post Picture</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">newsmode</span>
+                        <a href="/news">Get All Picture</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">newsmode</span>
+                        <a href="/news">Update Picture</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">newsmode</span>
+                        <a href="/news">Delete Picture</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Donation Section -->
+            <div class="list-container">
+                <h5>Donation</h5>
+                <ul>
+                    <li>
+                        <span class="material-symbols-outlined">newsmode</span>
+                        <a href="/news">See Donations</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">newsmode</span>
+                        <a href="/news">Delete Donation</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Concerns Section -->
+            <div class="list-container">
+                <h5>Concerns</h5>
+                <ul>
+                    <li>
+                        <span class="material-symbols-outlined">newsmode</span>
+                        <a href="/news">Check Concern</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">newsmode</span>
+                        <a href="/news">Delete Concern</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Volunteer Section -->
+            <div class="list-container">
+                <h5>Volunteer</h5>
+                <ul>
+                    <li>
+                        <span class="material-symbols-outlined">newsmode</span>
+                        <a href="/news">Check Requests</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">newsmode</span>
+                        <a href="/news">Delete Request</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Other Section -->
+            <div class="list-container">
+                <h5>Other</h5>
+                <ul>
+                    <li>
+                        <span class="material-symbols-outlined">newsmode</span>
+                        <a href="/news">Update Donor</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">newsmode</span>
+                        <a href="/news">Update Members</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div *ngIf="userList.length > 0; else loading" class="userList-container">
+            <div *ngFor="let userItem of userList">
+                <h5 class="heading">{{ userItem.username }}</h5>
+                <h5 class="heading">{{ userItem.name }}</h5>
+                <h5 class="heading">{{ userItem.phone }}</h5>
+                <h5 class="heading">{{ userItem.email }}</h5>
+            </div>
+        </div>
+
+        <ng-template #loading>
+            <p>Loading...</p>
+        </ng-template>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="image-slider" (mouseenter)="onHover()" (mouseleave)="onLeave()">
+    <button mat-icon-button class="prev-button" (click)="prevSlide()">
+      <mat-icon>keyboard_arrow_left</mat-icon>
+    </button>
+    <div class="slider-container">
+      <img *ngFor="let image of images" [src]="image" class="slider-image" [class.active]="images.indexOf(image) === currentIndex">
+    </div>
+    <button mat-icon-button class="next-button" (click)="nextSlide()">
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </button>
+  </div>
+  

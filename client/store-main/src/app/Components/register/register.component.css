@@ -1,0 +1,79 @@
+.body{
+    height: 100vh;
+    background-image: url(../../../assets/images/background/mohammad-asadi-XYNl8Zrlas8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+  }
+  
+  
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  
+  }
+  .form{
+    margin-top: 2%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 80vh;
+    border-bottom-left-radius: 29px;
+    border-bottom-right-radius: 29px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.479));
+  
+  }
+  .form-conatiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  
+  /* mat-form-field input{
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+  } */
+  
+  mat-label{
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    font-weight: lighter;
+  
+  }
+  
+  .signup-btn-container li, a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+  }
+  
+  .signup-btn-container {
+    z-index: 0;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.479));
+    height: 10vh;
+    width: 300px;
+    border-bottom-left-radius: 29px;
+    border-bottom-right-radius: 29px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  
+  .signup_btn {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-weight: 600;
+    color: white;
+    padding: 2%;
+  }

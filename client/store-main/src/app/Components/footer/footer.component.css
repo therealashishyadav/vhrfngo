@@ -1,0 +1,38 @@
+.footer-class{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer {
+    padding: 20px 0;
+  }
+
+  a{
+    color: #666;
+  }
+  
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  
+  h3 {
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+  }
+  

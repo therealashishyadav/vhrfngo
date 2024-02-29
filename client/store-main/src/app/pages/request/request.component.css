@@ -1,0 +1,42 @@
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    border-bottom-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+    border: 1px solid rgba(50, 50, 93, 0.25);
+    border-radius: 9px;
+    background-color: lightgray;
+    margin-top: 2%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form mat-form-field{
+    width: 100%;
+}
+
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #5b8cba;
+    width: 50%;
+    height: 40px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 2% ;
+}

@@ -1,0 +1,44 @@
+<div class appearance="outline"="body">
+  <div class="register-page">
+    <div class="container">
+      <div class="form">
+
+        <form class="form-conatiner">
+          <mat-form-field appearance="outline">
+            <mat-label>Username</mat-label>
+            <input matInput placeholder="Username" name="username" [(ngModel)]="user.username" required>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Name" name="name" [(ngModel)]="user.name" required>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Phone</mat-label>
+            <input matInput placeholder="Phone" name="phone" [(ngModel)]="user.phone" required>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Email" name="email" [(ngModel)]="user.email" required>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput type="password" placeholder="Password" name="password" [(ngModel)]="user.password" required>
+          </mat-form-field>
+
+        </form>
+
+      </div>
+
+      <div class="signup-btn-container ">
+        <li><a href="/signin">Already Have an Account ?</a></li>
+
+        <button class="signup_btn" (click)="saveUser">Sign Up</button>
+      </div>
+
+    </div>
+  </div>
+</div>

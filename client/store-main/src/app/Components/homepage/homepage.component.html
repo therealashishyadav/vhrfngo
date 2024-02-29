@@ -1,0 +1,129 @@
+<app-slider></app-slider>
+<div class="homepage">
+
+    <div class="bootstrap-wrapper">
+        <div class="container">
+            <div class="helpline">
+                <div class="contact">
+                    <button (click)="toggleForm()" class="concern-btn btn">Raise a Concern</button>
+                    <div (click)="toggleForm1()" class="volunteer-button btn">Be a Part</div>
+                    <div class="donate btn">Donate</div>
+
+                </div>
+                <div class="raise-concern" *ngIf="showForm">
+                    <app-concern class="concern-page"></app-concern>
+                </div>
+
+                <div class="request" *ngIf="showFormRequest">
+                    <app-request></app-request>
+                </div>
+
+                <div class="proof">
+                    <app-proof></app-proof>
+                </div>
+
+            </div>
+
+            <section class="news">
+                <app-readnews></app-readnews>
+            </section>
+
+
+            <section class="about">
+
+                <div class="heading">About Us</div>
+                <div class="para">
+                    <p>Visionlife Human Rights Foundation (VHRF) is a fully Non profit organisation, started on 7
+                        October
+                        2020. The Organization is registered in section 8 under the company act 2013. The NGO is
+                        recognized
+                        by NITI Aayog, Government of India. The registration No. this organization under NITI Aayog is
+                        WB/2020/0267206. Its main objective is to spread awareness of human rights of law in India. It
+                        is a
+                        NGO with a clear mission to protect and promote Human Rights and Fight against Child Labour,
+                        Women
+                        Rights etc.</p>
+                </div>
+
+                <div class="list">
+                    <div class="mission sub-heading">
+                        <h3>Our Mission</h3>
+
+                        <div class="mission-para sub-para para">
+                            <p>Visionlife Human Rights Foundation is to try to bring awareness for the welfare of Human
+                                Beings
+                                in the society and to create an atmosphere of harmony without cost, Religion, classless,
+                                High
+                                and low in the society, and whatever work the organization has to do for human welfare,
+                                it
+                                will
+                                do.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="vision sub-heading">
+                        <h3>Our Vision</h3>
+                        <div class="vision-para sub-para para">
+                            <p>The main vision of this organization is to try to reach our services to the common man
+                                and
+                                establishing the office of the organization across the country to do all the work
+                                related to
+                                human welfare, Human peace, Human harmony, Human unity and protection of human rights
+                                and to
+                                provide cooperation to the government and administration in eradicating corruption.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="objective sub-heading">
+                        <h3>Objective</h3>
+                        <div class="objective-para sub-para para">
+                            <p>Our main objective is to provide complete information about human rights law to every
+                                person
+                                of the society and to spread awareness of the fundamental rights given in part 3 of the
+                                Indian Constitution keeping in touch with the national human rights Commission and
+                                follow
+                                all the guideline of NHRC.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="achivement">
+
+                <h3>Achivements</h3>
+
+                <div class="achivement-container">
+
+
+
+                    <div class="line"></div>
+                    <div class="donar">
+                        <h5>DONAR</h5>
+                        <span>849+</span>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="members">
+                        <h5>ACTIVE MEMBERS</h5>
+                        <span>2867+</span>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="ngo-found">
+                        <h5>FOUNDED IN</h5>
+                        <span>2020</span>
+                    </div>
+                    <div class="line"></div>
+
+                </div>
+
+            </section>
+        </div>
+    </div>
+</div>

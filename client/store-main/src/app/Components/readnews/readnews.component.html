@@ -1,0 +1,12 @@
+<div *ngIf="newsList.length > 0; else loading" class="newsList-container">
+    <div *ngFor="let newsItem of newsList">
+        <p>{{newsItem.date}}</p>
+        <h5 class="heading">{{ newsItem.keyword }}</h5>
+        <h5 class="heading">{{ newsItem.heading }}</h5>
+        <p>{{newsItem.body}}</p>
+    </div>
+</div>
+
+<ng-template #loading>
+    <p>Loading...</p>
+</ng-template>

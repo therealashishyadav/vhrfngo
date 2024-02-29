@@ -1,0 +1,37 @@
+  
+  .button-container {
+    /* height:60vh ; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 10rem;
+    width: 15rem;
+    color: rgb(255, 255, 255);
+    /* padding: 10px 20px; */
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border-radius: 9px;
+    background-color: rgb(67, 70, 128);
+    margin-left: 2%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .button:hover {
+    background-color:  rgb(55, 57, 106);;
+  }
+  
+  a{
+    display: flex;
+    flex-direction: column;
+  }

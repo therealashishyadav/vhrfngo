@@ -1,0 +1,50 @@
+<div class="news">
+    <div class="bootstrap-wrapper">
+        <div class="container">
+            <div class="news-container">
+                <mat-form-field appearance="outline">
+                    <mat-label>Heading</mat-label>
+                    <input matInput type="text" placeholder="Heading" [(ngModel)]="news.heading" name="heading">
+                </mat-form-field>
+
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Keyword</mat-label>
+                    <input matInput type="text" placeholder="Keyword" [(ngModel)]="news.keyword" name="keyword">
+                </mat-form-field>
+
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Date</mat-label>
+                    <input matInput type="date" placeholder="Date" [(ngModel)]="news.date" name="date">
+                </mat-form-field>
+
+                
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Write Your News Here</mat-label>
+                    <textarea matInput placeholder="Write Your News Here" [(ngModel)]="news.body" name="body"
+                        rows="5"></textarea>
+                </mat-form-field>
+
+                <button (click)="submit()">Post</button>
+
+            </div>
+
+            <div *ngIf="newsList.length > 0; else loading" class="newsList-container">
+                <div *ngFor="let newsItem of newsList">
+                    <h5 class="heading">{{ newsItem.keyword }}</h5>
+                    <h5 class="heading">{{ newsItem.heading }}</h5>
+                    <p>{{newsItem.body}}</p>
+                </div>
+            </div>
+
+            <ng-template #loading>
+                <p>Loading...</p>
+            </ng-template>
+
+
+
+        </div>
+    </div>
+</div>

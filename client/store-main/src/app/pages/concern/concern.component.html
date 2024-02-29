@@ -1,0 +1,35 @@
+<div class="contact">
+    <div class="bootstrap-wrapper">
+        <div class="container">
+            <div class="raise-concern">
+                <form class="concern-form">
+
+                    <mat-form-field appearance="outline">
+                        <input matInput placeholder="Name" name="name">
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline">
+                        <input matInput type="tel" placeholder="Phone Number" name="phoneNumber">
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline">
+                        <input matInput placeholder="Location" name="location">
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline">
+                        <input matInput type="number" placeholder="Pin" name="pin">
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline">
+                        <textarea matInput placeholder="Address" name="address"></textarea>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline">
+                        <textarea matInput placeholder="Explain in brief" name="explanation"></textarea>
+                    </mat-form-field>
+                    <button mat-raised-button color="primary" (click)="submitTicket()" class="concern-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section {
+    flex: 1 1 auto;
+    background-color: #fff;
+    /* Light background for better readability */
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+    text-decoration: underline;
+
+}
+
+.thank-section {
+    text-align: center;
+    margin-top: 15px;
+}
